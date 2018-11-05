@@ -172,7 +172,7 @@
                 hideHover: 'auto',
 				  pointFillColors:['#ffffff'],
 				  pointStrokeColors: ['black'],
-				  lineColors:['#A6A6A6','#F09B22','#87B209','#089684','#AB7F9C','#FF9933'],
+				  lineColors:['#CC6600','#FF9900','#CC9966','#FF9966','#FFCC00','#FFCC66'],
                 resize: true
             });
 
