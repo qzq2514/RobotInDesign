@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>机器人数据统计可视化网站</title>
+    <!-- Bootstrap Styles-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- Morris Chart Styles-->
+    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="assets/css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.useso.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="assets/js/Lightweight-Chart/cssCharts.css"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="global.html"><strong>Robot in Design</strong></a>
+				
+		<div id="sideNav" href=""><i class="fa fa-caret-right"></i></div>
+            </div>
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>漆梦瑶</strong>
+                                </div>
+                                <div>文档制作、汇报演讲</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>姚梦婷</strong>
+                                </div>
+                                <div>文档制作、资料收集</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>祁忠琪</strong>
+                                </div>
+                                <div>网站搭建、数据收集</div>
+                            </a>
+                        </li>
+                    </ul>
+        </nav>
+        </nav>
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a href="global.html"><i class="fa fa-dashboard"></i> 全球机器人产业发展趋势</a>
+                    </li>
+                    <li>
+                        <a href="china.html"><i class="fa fa-desktop"></i> 我国机器人产业发展趋势</a>
+                    </li>
+					<li>
+                        <a href="region.html"><i class="fa fa-bar-chart-o"></i>我国各区域机器人产业发展水平</a>
+                    </li>
+                    <li>
+                        <a href="AGVinfo.html"><i class="fa fa-qrcode"></i> 我国物流机器人发展概述</a>
+                    </li>
+                    
+                    <li>
+                        <a class="active-menu" href="AGVcase.html"><i class="fa fa-table"></i>AGV物流机器人案例分析</a>
+                    </li>
+        </nav>
+        <!-- /. NAV SIDE  -->
+      
+		<div id="page-wrapper">
+          <div class="header"> 
+                        <h1 class="page-header">
+                            AGV物流机器人案例分析<small>案例分析</small>
+                        </h1>       
+        </div>
+
+            <div id="page-inner">
+
+               <div class="row">
+                 <div class="panel-heading" style="background-color: #666666">
+                                <font color="#FFFFFF">Kiva机器人</font>
+                            </div> 
+            <div class="col-md-5 col-sm-12 col-xs-12">
+               <img src="assets/img/Kiva.png">
+            </div>
+            <div class="col-md-7 col-sm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                           Kiva机器人构成分析
+                        </div>
+                        <div class="panel-body">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#home" data-toggle="tab">商业构成分析</a>
+                                </li>
+                                <li class=""><a href="#profile" data-toggle="tab">人本构成分析</a>
+                                </li>
+                                <li class=""><a href="#messages" data-toggle="tab">艺术构成分析</a>
+                                </li>
+                                </li>
+                                <li class=""><a href="#culture" data-toggle="tab">文化构成分析</a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade active in" id="home">
+                                    <h4>网上购物模式发展刺激物流机器人的产生</h4>
+                                    <p>网上购物模式日益兴盛，市场对物流的需求越来越强大。Kiva物流机器人的主要功能就是来处理仓库的货物盘点以及配货等工作，以缓解对于人力资源极高的需求。
+根据报告显示，亚马逊使用Kiva机器人之后交付成本下降了20%至40%，预估每年在仓库分拣环节中，机器人能为亚马逊节省9亿美元左右。</p>
+                                </div>
+                                <div class="tab-pane fade" id="profile">
+                                    <h4>减少人力劳动,降低人力成本</h4>
+                                    <p>亚马逊的口碑建立在其全球90多个物流和分拣中心的效率上，亚马逊在美国就有50个配货仓库支撑其快速的业务。亚马逊今年为了应对圣诞销售季为物流中心雇佣了8万名临时工，很多工作人员每天要工作12小时，每天可能要走11到24公里分拣货物。如果工作人员拿着10-20公斤的货物走长路，效率十分之低。</p>
+                                </div>
+                                <div class="tab-pane fade" id="messages">
+                                    <h4>造型活泼、动感十足</h4>
+                                    <p>外观上，Kiva机器人看起来像一个冰球的搬运机器。Kiva有两个型号，较小的型号约2英尺×2.5英尺，一英尺高，顶部有个托运圆盘，能够抬起重量1000磅的货物行走，而较大的型号可以承载重达3000磅。橘黄色的流线型塑料外壳采用ABS材料真空塑形。造型活泼，动感十足。</p>
+                                </div>
+                                <div class="tab-pane fade" id="culture">
+                                    <h4>物流新时代的信号</h4>
+                                    <p>Kiva System的成功不仅让各大电商看到了机器人对仓储管理的重要性，也让创业者也看到了这一领域的趋势，仓储机器人初创公司雨后春笋般地出现，仅仅国内，阿里、京东等电商巨头纷纷入局，快仓、Geek+等初创企业也在悄然升起。业界给Kiva System的评价是：物流新时代的信号。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+			<div class="row">
+                <h4>技术构成分析</h4>
+                <div class="col-md-3 col-sm-4">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            系统架构和机械结构
+                        </div>
+                        <div class="panel-body">
+                            <p>Kiva机器人外壳的每一侧都有红外传感阵列，以及气动保险杠，用于检测和缓冲碰撞。外壳上还有充电接口和一系列状态指示灯。每一台Kiva机器人有三个独立的自由度：两个驱动轮，加上一个用于起重的旋转电机。起重电机转动时，两个驱动轮反方向旋转，结果是托盘相对于地面没有旋转，只在滚珠丝杠的作用下升高。相比于传统的大负载直线驱动方案，Kiva的这种利用轮子的结构更加简单可靠。</p>
+                        </div>
+                        <div class="panel-footer">
+                           <center><img src="assets/img/tech1.png"></center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            撞传感器
+                        </div>
+                        <div class="panel-body">
+                            <p>对于像Kiva这种大块的流线型外壳而言，做传统的一体化碰撞传感器是非常困难的。Kiva的工程师们找到了一个非常聪明的低成本解决方案：用乙烯/橡胶管充气，加上一个简单的气压传感器。一旦检测到管内气压变化，机器人就立即停止所有运动。 上图右边的黑盒子用于检测压力信号和所有红外传感器的信号，以简化与主控制器的协议和接线。精确的碰撞传感器是保证Kiva机器人长久重复使用的必备技术。</p>
+                        </div>
+                        <div class="panel-footer">
+                            <center><img src="assets/img/tech2.png"></center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            升降机构
+                        </div>
+                        <div class="panel-body">
+                            <p>齿轮箱，升降电机和大口径滚珠丝杠。升降机构使用了一个定制的滚珠丝杠，经由一个标准尼龙齿轮和电机连接。升降机使用的电机和两个驱动轮电机是同一款Pittman电机。它能够输出约3N*M的扭矩和1KW的堵转功率。电机输出轴经过25:1的日本Brother齿轮箱，能在72rpm输出46N*M的扭矩。这款齿轮箱单价高达1000美金，想必大量订货的话会便宜不少。升降结构能够大大减轻人力搬运的成本。</p>
+                        </div>
+                        <div class="panel-footer">
+                            <center><img src="assets/img/tech3.png"></center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            摄像头和成像模块
+                        </div>
+                        <div class="panel-body">
+                            <p>朝上和网下看的摄像头。两个都安装于滚珠丝杠内部。置于升降机构内部的是Kiva系统的关键设备之一：定制的双摄像机成像模块。 一个摄像头向下看地面以识别仓库地板上的2D条形码， 另一个向上看货架的底部。每个摄像头都配备6个红色LED用于照明。 夹在两个摄像机之间的是图像处理模块，其核心是ADI ADSP-BF548 Blackfin多媒体处理器，通过高速串口获取数据，进行数据矩阵检测。</p>
+                        </div>
+                        <div class="panel-footer">
+                            <center><img src="assets/img/tech4.png"></center>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                 <div class="panel-heading" style="background-color: #666666">
+                                <font color="#FFFFFF">其他物流机器人案例</font>
+                            </div> 
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Fetch和Freight机器人
+                        </div>
+                        <div class="panel-body">
+                            <p>Fetch and Freight 实现拣货机器人和仓储运输机器人的深度结合，从而保证整个仓储系统的无缝运行。Fetch and Freight主要包括两个部分，配备可从货架上拿取特定商品的机械臂的Fetch；与Fetch一同行动，运输拿到商品的“Freight”。</p>
+                        </div>
+                        <div class="panel-footer">
+                            <center><img src="assets/img/cases/Fetch_Freight.png"></center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            “盒子机器人”
+                        </div>
+                        <div class="panel-body">
+                            <p>Skype创始人Heinla与Friis旗下的Starship公司推出了一种专门用来小件货物配送的“盒子机器人”。之所以这么称呼，是因为它的外形像极了一个配有六个轮子的储物盒，它最重可承载20磅（约合9公斤）的货物，最远可达到物流中心方圆1英里（约合1.6公里）多的范围。</p>
+                        </div>
+                        <div class="panel-footer">
+                            <center><img src="assets/img/cases/box.png"></center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            Transwheel机器人
+                        </div>
+                        <div class="panel-body">
+                            <p>Transwheel的机器人。它采用自平衡系统，当机器人手臂载货时能脚踩单轮保持直立行驶，单个机器人可运送小包裹，而若干机器人组合协作可运送大包裹。此外该机器人可使用GPS系统进行导航，能通过面部识别软件确认接收者的身份。同时其还具备智能取件的功能。</p>
+                        </div>
+                        <div class="panel-footer">
+                            <center><img src="assets/img/cases/Transwheel.png"></center>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+                   <!-- /. ROW  -->
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            日立HITACHI智能机器人
+                        </div>
+                        <div class="panel-body">
+                            <p>子弹头列车和发电站的制造商日立公司，近日推出了一款机器人，该机器人可以拿起大约1公斤重的商品，能够潜在的代替企业中重复性的工作，如亚马逊仓库中从货架上找物品。这些机器人也可以应用于固定在工厂的地面上的工作，常见的类型如丰田汽车生产线上的工业机器人。是国内已有部分领先企业开始在仓储领域开展机器人作业</p>
+                        </div>
+                        <div class="panel-footer">
+                            <center><img src="assets/img/cases/HITACHI.png"></center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            Bulter机器人
+                        </div>
+                        <div class="panel-body">
+                            <p>Bulter机器人相当于一个方形版本的Kiva，由总部位于印度古尔冈和新加坡的机器人公司GrayOrange制造。这家创业公司由SamayKohli和AkashGupta于2009年建立，当时是希望做一些和教育培训相关的机器人，后来它演变成一个工业机器人制造公司。目前主要致力于在零售、物流以及仓库机器人领域构建业务。</p>
+                        </div>
+                        <div class="panel-footer">
+                            <center><img src="assets/img/cases/Bulter.png"></center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            Click&Pick系统
+                        </div>
+                        <div class="panel-body">
+                            <p>与Kiva等货架式存储不同，Swisslog的Click&Pick系统采用的是一种三维的立方体网格架系统，每个立方体内有一个标准尺寸的箱子装着特定货物，如果装着所需货物的箱子埋在别的箱子下面，机器人会把上面的箱子拿起来堆在旁边，拿到货物后再放好。据Sisslog称，Click&Pick一小时能处理一千张订单，速度是人类作业的4-5倍。</p>
+                        </div>
+                        <div class="panel-footer">
+                            <center><img src="assets/img/cases/Click_Pick.png"></center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <!-- /. ROW  -->
+				<footer><p>Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://www.sucaihuo.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+				
+        
+				</footer>
+            </div>
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+    <!-- JS Scripts-->
+    <!-- jQuery Js -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+	 
+    <!-- Metis Menu Js -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+    <!-- Morris Chart Js -->
+    <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
+    <script src="assets/js/morris/morris.js"></script>
+	
+	
+	<script src="assets/js/easypiechart.js"></script>
+	<script src="assets/js/easypiechart-data.js"></script>
+	
+	 <script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
+	
+    <!-- Custom Js -->
+    <script src="assets/js/AGVinfoCustom-scripts.js"></script>
+
+
+</body>
+
+</html>

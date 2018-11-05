@@ -1,0 +1,484 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>机器人数据统计可视化网站</title>
+    <!-- Bootstrap Styles-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- Morris Chart Styles-->
+    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="assets/css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.useso.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="assets/js/Lightweight-Chart/cssCharts.css"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="global.html"><strong>Robot in Design</strong></a>
+				
+		<div id="sideNav" href=""><i class="fa fa-caret-right"></i></div>
+            </div>
+
+           <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>漆梦瑶</strong>
+                                </div>
+                                <div>文档制作、汇报演讲</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>姚梦婷</strong>
+                                </div>
+                                <div>文档制作、资料收集</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>祁忠琪</strong>
+                                </div>
+                                <div>网站搭建、数据收集</div>
+                            </a>
+                        </li>
+                    </ul>
+        </nav>
+        </nav>
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a href="global.html"><i class="fa fa-dashboard"></i> 全球机器人产业发展趋势</a>
+                    </li>
+                    <li>
+                        <a href="china.html"><i class="fa fa-desktop"></i> 我国机器人产业发展趋势</a>
+                    </li>
+					<li>
+                        <a class="active-menu" href="region.html"><i class="fa fa-bar-chart-o"></i>我国各区域机器人产业发展水平</a>
+                    </li>
+                    <li>
+                        <a href="AGVinfo.html"><i class="fa fa-qrcode"></i> 我国物流机器人发展概述</a>
+                    </li>
+                    
+                    <li>
+                        <a href="AGVcase.html"><i class="fa fa-table"></i>AGV物流机器人案例分析</a>
+                    </li>
+        </nav>
+        <!-- /. NAV SIDE  -->
+      
+		<div id="page-wrapper">
+          <div class="header"> 
+                        <h1 class="page-header">
+                            我国各区域机器人<small>2018发展趋势及特征</small>
+                        </h1>       
+        </div>
+            <div id="page-inner">
+
+            <center></center>
+           <div class="row">
+            <div class="col-md-5 col-sm-12 col-xs-12">
+               <img src="assets/img/region.png">
+            </div>
+            <div class="col-md-7 col-sm-12 col-xs-12">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                各区域机器人产业发展水平概况
+                            </div> 
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>地区</th>
+                                                <th>销售收入(亿元)</th>
+                                                <th>平均销售利润率</th>
+                                                <th>产业集聚度-CR5 </th>
+                                                <th>区域发展特点</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>长三角地区</td>
+                                                <td>103</td>
+                                                <td>14%</td>
+                                                <td>45%</td>
+                                                <td>产业链布局优势仍较为显著</td>
+                                            </tr>
+                                            <tr>
+                                                <td>珠三角地区</td>
+                                                <td>90.4</td>
+                                                <td>18%</td>
+                                                <td>20%</td>
+                                                <td>产业发展效益全国领先</td>
+                                            </tr>
+                                            <tr>
+                                                <td>京津冀地区</td>
+                                                <td>54.2</td>
+                                                <td>16%</td>
+                                                <td>20%</td>
+                                                <td>区域协同助推产业智能化发展</td>
+                                            </tr>
+                                            <tr>
+                                                <td>东北地区</td>
+                                                <td>72.3</td>
+                                                <td>14%</td>
+                                                <td>60%</td>
+                                                <td>龙头企业持续发挥核心带动作用</td>
+                                            </tr>
+                                            <tr>
+                                                <td>中部地区</td>
+                                                <td>52</td>
+                                                <td>13%</td>
+                                                <td>34%</td>
+                                                <td>依托后发优势打造产业集群</td>
+                                            </tr>
+                                            <tr>
+                                                <td>西部地区</td>
+                                                <td>42.2</td>
+                                                <td>10%</td>
+                                                <td>31%</td>
+                                                <td>探索与积累进程中的特色发展</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+            </div>
+
+            <div class="row">
+                <div class="panel-heading" style="background-color: #666666">
+                                <font color="#FFFFFF">各区域机器人产业结构水平</font>
+                            </div> 
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            长三角地区
+                        </div>
+                        <div class="panel-body">
+                            <p>  长三角地区的本体研发生产企业占比与平均核心零部件国产化率都位于全国首位，机器人高端产品收 入占比也位于全国前列。依托国内外先进龙头企业的示范集聚效应，长三角地区正在从上游的减速器控制 系统和伺服电机研发生产，到中游的本体装备制造，再到下游的系统集成供应服务产业链各环节重点发力， 力求实现全产业链的有效增值。</p>
+                        </div>
+                        <div class="panel-footer">
+                            <center><img src="assets/img/chang.png"></center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            珠三角地区
+                        </div>
+                        <div class="panel-body">
+                            <p>珠三角地区机器人本体研发及生产企业占比位居长三角地区和东北地区之后，高端产品收入占比位于 全国中游水平。相比而言，平均核心零部件国产化率 处于全国领先水平。同时，珠三角地区机器人企业凭借本区域内制造业良好的发展基础， 重点围绕系统集成领域展开布局，充分发挥渠道优势与价格优势，为机器人应用企业提供非标定制化服务。</p>
+                        </div>
+                        <div class="panel-footer">
+                            <center><img src="assets/img/zhu.png"></center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            京津冀地区
+                        </div>
+                        <div class="panel-body">
+                            <p>京津冀地区机器人本体研发及生产企业占比相比于全国其他区域并不占优势，但机器人相关高端产品收入占比位居全国第一。高技术含量、高附加值的服务有力地推动了京津冀地区机器人产品迅速占据国内高端市场。尽管部分重点企业已实现核心零部件的自主研发，但大部分机器人企业零部件仍以进口为主，整体核心零部件自足率还有待提高。</p>
+                        </div>
+                        <div class="panel-footer">
+                            <center><img src="assets/img/jin.png"></center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            东北地区
+                        </div>
+                        <div class="panel-body">
+                            <p>东北地区机器人本体研发及生产企业占比较高，大部分聚焦工业机器人的本体制造与整机组装，在全 国处于上游水平。东北地区机器人相关高端产品收入占比位于全国中游水平，工业机器人龙头企业生产的六轴及以上工业机器人产品，在与国外知名品牌产品竞争中凭借性价比和较好的售后服务拥有一定的比较优势。在龙头企业加速扩张的同时，东北地区机器人中小企业的产业配套环境与发展空间受到一定程度的限制。</p>
+                        </div>
+                        <div class="panel-footer">
+                            <center><img src="assets/img/dong.png"></center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            中部地区
+                        </div>
+                        <div class="panel-body">
+                            <p>中部地区机器人本体研发及生产企业占比与相关高端产品收入占比均处于全国中游偏下水平，亟需明 星企业与名牌产品对地区产业发展带来拉动成效。中部地区平均核心零部件国产化率暂时处于靠后位置， 主要依赖国外进口。同时，为激发区域内机器人企业的创新活力，提高企业自主研发能力和关键零部件产品国产化水平，中部地区注重引进国内外先进技术团队，与本地企业与研究机构联合加强技术创新，助力机器人产业实现跨越式发展。</p>
+                        </div>
+                        <div class="panel-footer">
+                            <center><img src="assets/img/zhong.png"></center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            西部地区
+                        </div>
+                        <div class="panel-body">
+                            <p>西部地区机器人本体研发及生产企业占比、相关高端产品收入占比与平均核心零部件国产化率相比全 国其他区域处于发展水平相对滞后的状态。西部地区虽然具备一定的工业发展基础，但机器人产业引入培育时间较短，需要更长时间发挥外部资源对本区域产业的激发带动效用，加快机器人关键共性技术的研发与应用，由点到链拓展机器人产业规模与优化产业结构，逐步形成有一定影响力的企业集群与装备市场。</p>
+                        </div>
+                        <div class="panel-footer">
+                            <center><img src="assets/img/xi.png"></center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <!-- /. ROW  -->
+
+<div class="row">
+    <div class="panel-heading" style="background-color: #99DD99">
+                                <font color="#FFFFFF">我国机器人产业发展特征趋势</font>
+                            </div> 
+            <div class="col-md-7 col-sm-12 col-xs-12">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                各区域机器人产业发展水平概况
+                            </div> 
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>样本城市</th>
+                                                <th>集聚区域</th>
+                                                <th>园区/龙头企业</th>
+                                                <th>发展特色</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>上海</td>
+                                                <td>长三角地区</td>
+                                                <td>上海交科松江科创园</td>
+                                                <td>孵化创新、创业培训、天使投资、开放平台</td>
+                                            </tr>
+                                            <tr>
+                                                <td>昆山</td>
+                                                <td>长三角地区</td>
+                                                <td>昆山高新区机器人产业园</td>
+                                                <td>大学科技园、科技产业园、"六位一体"</td>
+                                            </tr>
+                                            <tr>
+                                                <td>佛山</td>
+                                                <td>珠三角地区</td>
+                                                <td>中国(广东)机器人集成创新中心</td>
+                                                <td>自主创新、科研所重点扶持</td>
+                                            </tr>
+                                            <tr>
+                                                <td>唐山</td>
+                                                <td>京津冀地区</td>
+                                                <td>国家火炬唐山机器人集成创新中心</td>
+                                                <td>工业机器人、特种机器人为支撑</td>
+                                            </tr>
+                                            <tr>
+                                                <td>哈尔滨</td>
+                                                <td>东北地区</td>
+                                                <td>哈南机器人园区/哈工大机器人集团</td>
+                                                <td>精密减速器、智能云机器人、新兴智能设备</td>
+                                            </tr>
+                                            <tr>
+                                                <td>沈阳</td>
+                                                <td>东北地区</td>
+                                                <td>中德沈阳装备制造园</td>
+                                                <td>智能制造、高端装备、设计研发及应用</td>
+                                            </tr>
+                                            <tr>
+                                                <td>洛阳</td>
+                                                <td>中部地区</td>
+                                                <td>洛阳机器人智能装备产业园</td>
+                                                <td>与高校建立产学研合作关系</td>
+                                            </tr>
+                                            <tr>
+                                                <td>芜湖</td>
+                                                <td>中部地区</td>
+                                                <td>芜湖机器人产业园</td>
+                                                <td>核心部件打造、成套装备集成应用</td>
+                                            </tr>
+                                            <tr>
+                                                <td>重庆</td>
+                                                <td>西部地区</td>
+                                                <td>重庆两江新区机器人产业园</td>
+                                                <td>成果孵化转让、产业综合示范区域</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+             <div class="col-md-5 col-sm-12 col-xs-12">
+               <img src="assets/img/tend.png">
+             </div>
+            </div>
+			
+		<!-- <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            我国各区域机器人产业发展
+                        </div>
+                        <div class="panel-body">
+                            <div class="panel-group" id="accordion">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">长三角地区</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse" style="height: 0px;">
+                                        <div class="panel-body"  style="float:left,width:'50%'">
+                                            2017 年长三角地区机器人产业销售收入突破 103 亿元，产业平均销售利润率达 14%，处于全国中 等水平。长三角地区作为国内产业规模最大的机器人研发生产集群，以工业机器人为主要业务发展方向， 凭借规模效应和先进软硬件的设计及生产能力，迅速占据国内机器人市场。同时，长三角地区具备相当规 模的汽车制造、电子制造、食品包装等工业机器人应用市场，对能够有效提高生产效率、降低人工劳动强 度的机器人产品需求较大，为当地机器人产业发展提供了丰厚土壤。长三角地区机器人产业园区建设完备， 设计思路都基本围绕在依托园区原有的智能装备产业及配套引入机器人产业，提升本地智能制造水平。
+                                        </div>
+                                        <div style="float:right,width:'50%'">
+                                             <img src="assets/img/chang.png">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">珠三角地区</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse in" style="height: auto;">
+                                        <div class="panel-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">京津冀地区</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" class="collapsed">东北地区</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFour" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" class="collapsed">中部地区</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFive" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix" class="collapsed">西部地区</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseSix" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+				<footer><p>Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://www.sucaihuo.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+				
+        
+				</footer>
+            </div>
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+    <!-- JS Scripts-->
+    <!-- jQuery Js -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+	 
+    <!-- Metis Menu Js -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+    <!-- Morris Chart Js -->
+    <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
+    <script src="assets/js/morris/morris.js"></script>
+	
+	
+	<script src="assets/js/easypiechart.js"></script>
+	<script src="assets/js/easypiechart-data.js"></script>
+	
+	 <script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
+	
+    <!-- Custom Js -->
+    <script src="assets/js/regionCustom-scripts.js"></script>
+
+
+</body>
+
+</html>

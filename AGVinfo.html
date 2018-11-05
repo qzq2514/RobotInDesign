@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>机器人数据统计可视化网站</title>
+    <!-- Bootstrap Styles-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- Morris Chart Styles-->
+    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="assets/css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.useso.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="assets/js/Lightweight-Chart/cssCharts.css"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="global.html"><strong>Robot in Design</strong></a>
+				
+		<div id="sideNav" href=""><i class="fa fa-caret-right"></i></div>
+            </div>
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>漆梦瑶</strong>
+                                </div>
+                                <div>文档制作、汇报演讲</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>姚梦婷</strong>
+                                </div>
+                                <div>文档制作、资料收集</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>祁忠琪</strong>
+                                </div>
+                                <div>网站搭建、数据收集</div>
+                            </a>
+                        </li>
+                    </ul>
+        </nav>
+        </nav>
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a href="global.html"><i class="fa fa-dashboard"></i> 全球机器人产业发展趋势</a>
+                    </li>
+                    <li>
+                        <a href="china.html"><i class="fa fa-desktop"></i> 我国机器人产业发展趋势</a>
+                    </li>
+					<li>
+                        <a href="region.html"><i class="fa fa-bar-chart-o"></i>我国各区域机器人产业发展水平</a>
+                    </li>
+                    <li>
+                        <a class="active-menu" href="AGVinfo.html"><i class="fa fa-qrcode"></i> 我国物流机器人发展概述</a>
+                    </li>
+                    
+                    <li>
+                        <a href="AGVcase.html"><i class="fa fa-table"></i>AGV物流机器人案例分析</a>
+                    </li>
+                   
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+      
+		<div id="page-wrapper">
+          <div class="header"> 
+                        <h1 class="page-header">
+                            我国物流机器人<small>AGV发展概述</small>
+                        </h1>       
+        </div>
+            <div id="page-inner">
+
+               <div class="row">
+                <div class="panel-heading" style="background-color: #666666">
+                                <font color="#FFFFFF">国内物流机器人(AGV)市场结构与销量</font>
+                            </div> 
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                2018 年国内物流机器人市场结构
+                            </div>
+                            <div class="panel-body">
+                                <div id="morris-donut-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                <div class="col-md-8 col-sm-9">
+                    <div class="well well-sm">
+                        <h4>物流机器人(AGV)</h4>
+                        <p>目前在国内机器人行业中，物流机器人（AGV）是我国国产机器人翘楚，国产物流机器人市场占有率达85%以上</p>
+                    </div>
+                </div>
+                    <div class="col-md-8 col-sm-9">
+                    <div class="well">
+                        <h4>国内物流机器人发展趋势</h4>
+                        <p>我国物流机器人（AGV）的发展虽然始于上世纪60年代，但长期以来发展缓慢。近年来，在国内工业机器人需求量激增以及“中国制造2025”、智慧物流等各项政策的保驾护航下，我国AGV机器人销售量持续增长。根据前瞻产业研究院《2018-2023年中国仓储物流行业市场前瞻与投资战略规划分析报告》数据显示，2013年我国AGV机器人销量2439台，2014年上升至3150台，同比增长29.15%；2016年销量为6500台，同比增长51.16%。2013-2016年年复合增长率达38.64%，增幅较大的主要原因为电商仓储AGV的使用和推广以及户外港口AGV的应用。初步测算2017年AGV机器人将达到12900台，预计2018年AGV机器人销量将超1.8万台，同比增长超40%。</p>
+                    </div>
+                </div>
+                </div> 
+                <!-- /. ROW  -->
+                 <div class="row">
+                <div class="panel-heading" style="background-color: #666666">
+                                <font color="#FFFFFF">国内物流机器人(AGV)市场结构与销量</font>
+                            </div>
+                    
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                                2013-2018年中国AGV机器人销量(台)
+                            </div>
+                            <div class="panel-body">
+                                <div id="morris-bar-chart2"></div>
+                            </div>
+                        
+                    </div>  
+                    </div>
+                    
+                    <div class="col-md-6">
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                                2016-2022年AGV物流装备市场规模及预测(亿元)
+                            </div>
+                            <div class="panel-body">
+                                <div id="morris-bar-chart1"></div>
+                            </div>
+                        
+                    </div>  
+                    </div>
+                </div> 
+                <!-- /. ROW  -->
+	
+                <div class="row">
+                <div class="col-md-12 col-sm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                           物流机器人五大构成分析
+                        </div>
+                        <div class="panel-body">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#business" data-toggle="tab">商业构成</a>
+                                </li>
+                                <li class=""><a href="#culture" data-toggle="tab">文化构成</a>
+                                </li>
+                                <li class=""><a href="#art" data-toggle="tab">艺术构成</a>
+                                </li>
+                                <li class=""><a href="#tech" data-toggle="tab">技术构成</a>
+                                </li>
+                                <li class=""><a href="#humanCost" data-toggle="tab">人本构成</a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade active in" id="business">
+                                    <h4>市场潜力十分巨大</h4>
+                                    <p>过去一年，物流机器人供应商中集中抢占的市场领域之一是无人叉车领域，特别是一些国内叉车企业通过设立相关业务部门，开始在这一领域加大力度布局。根据中国工程机械工业协会工业车辆分会发布的数据，国内电动叉车（包括电动平衡重乘驾式叉车和各类电动仓储叉车）2017年销售量为129845台，比2016年增长53%。行业内保守估计，未来几年，将会有5%的电动叉车改成AGV，这对于物流机器人市场而言已是一个相当大的数字。可以预见，传统工业叉车企业的产品向AGV转化的趋势非常明显。而在应用方面，一些新建厂房和老厂改造过程中，在进行无人化设计和规划产线的时候，都已经考虑到采用无人叉车，由此可见未来市场潜力十分巨大。
+其他AGV传统需求行业，如电商、家电、国防、玻纤、医疗、食品、化工等行业，对AGV的需求也呈旺盛趋势。特别是电商存储及分拣领域，在2017年市场需求比往年应当有成倍增长。</p>
+                                </div>
+                                <div class="tab-pane fade" id="culture">
+                                    <h4>新一代人工智能兴起，行业迎来快速发展新机遇</h4>
+                                    <p>随着信息技术快速发展和互联网快速普及，以 2006 年深度学习模型的提出为标志，人工智能迎来第 三次高速发展。与此同时，依托人工智能技术，智能公共服务机器人应用场景和服务模式的不断拓展，带 动服务机器人市场规模高速增长。2013 年以来全球服务机器人市场规模年均增速达 23.5%，2018 年全 球服务机器人市场规模将达到 92.5 亿美元，2020 年将快速增长至 156.9 亿美元。2018 年，全球家用服 务机器人、医疗服务机器人和公共服务机器人市场规模预计分别为 44.8 亿美元、25.4 亿美元和 22.3 亿 美元，其中家用服务机器人市场规模占比最高达 48%，分别高于家用服务机器人、公共服务机器人 21、 24 个百分点。</p>
+                                </div>
+                                <div class="tab-pane fade" id="art">
+                                    <h4>新兴应用持续涌现，各国政府相继展开战略布局</h4>
+                                    <p>近年来，全球特种机器人整机性能持续提升，不断催生新兴市场，引起各国政府高度关注。2013 年 以来全球特种机器人产业规模年均增速达 12.8%，2018 年全球特种机器人市场规模将达到 37.5 亿美元; 至 2020 年，预计全球特种机器人市场规模将达 49.5 亿美元。其中，美国、日本和欧盟在特种机器人创 新和市场推广方面全球领先。美国提出“机器人发展路线图”，计划将特种机器人列为未来 15 年重点发 展方向。日本提出“机器人革命”战略，涵盖特种机器人、新世纪工业机器人和服务机器人三个主要方向， 计划至 2020 年实现市场规模翻番，扩大至 12 万亿日元，其中特种机器人将是增速最快的领域。欧盟启 动全球最大民用机器人研发项目，计划到 2020 年投入 28 亿欧元，开发包括特种机器人在内的机器人产 品并迅速推向市场。</p>
+                                </div>
+                                <div class="tab-pane fade" id="tech">
+                                    <h4>软件人才不断涌现、算法创新</h4>
+                                    <p>2017年移动机器人技术创新主要还是集中体现在导航技术的先进性，越来越多的生产商着眼于未来，研发更多先进的导航技术。随着计算机技术、传感器技术、伺服控制等硬件越来越进步，再加上这几年优秀控制及软件人才不断涌现，在物流AGV导航算法上不断取得突破。研发一款智能物流机器人，通过摄像技术、激光传感器等硬件支持，通过全新导航控制算法，构建机器人周围环境的三维地图，使机器人布置路径更加灵活，调试更加容易，是部分实力强大的企业舍得投入巨资进行研发的目标。</p>
+                                </div>
+                                <div class="tab-pane fade" id="humanCost">
+                                    <h4>新兴应用持续涌现，各国政府相继展开战略布局</h4>
+                                    <p>近年来，全球特种机器人整机性能持续提升，不断催生新兴市场，引起各国政府高度关注。2013 年 以来全球特种机器人产业规模年均增速达 12.8%，2018 年全球特种机器人市场规模将达到 37.5 亿美元; 至 2020 年，预计全球特种机器人市场规模将达 49.5 亿美元。其中，美国、日本和欧盟在特种机器人创 新和市场推广方面全球领先。美国提出“机器人发展路线图”，计划将特种机器人列为未来 15 年重点发 展方向。日本提出“机器人革命”战略，涵盖特种机器人、新世纪工业机器人和服务机器人三个主要方向， 计划至 2020 年实现市场规模翻番，扩大至 12 万亿日元，其中特种机器人将是增速最快的领域。欧盟启 动全球最大民用机器人研发项目，计划到 2020 年投入 28 亿欧元，开发包括特种机器人在内的机器人产 品并迅速推向市场。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+				
+               
+                <!-- /. ROW  -->
+			
+		
+				<footer><p>Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://www.sucaihuo.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+				
+        
+				</footer>
+            </div>
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+    <!-- JS Scripts-->
+    <!-- jQuery Js -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+	 
+    <!-- Metis Menu Js -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+    <!-- Morris Chart Js -->
+    <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
+    <script src="assets/js/morris/morris.js"></script>
+	
+	
+	<script src="assets/js/easypiechart.js"></script>
+	<script src="assets/js/easypiechart-data.js"></script>
+	
+	 <script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
+	
+    <!-- Custom Js -->
+    <script src="assets/js/AGVinfoCustom-scripts.js"></script>
+
+
+</body>
+
+</html>

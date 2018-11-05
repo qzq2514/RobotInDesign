@@ -1,0 +1,363 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>机器人数据统计可视化网站</title>
+    <!-- Bootstrap Styles-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- Morris Chart Styles-->
+    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="assets/css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.useso.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="assets/js/Lightweight-Chart/cssCharts.css"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="global.html"><strong>Robot in Design</strong></a>
+				
+		<div id="sideNav" href=""><i class="fa fa-caret-right"></i></div>
+            </div>
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>漆梦瑶</strong>
+                                </div>
+                                <div>文档制作、汇报演讲</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>姚梦婷</strong>
+                                </div>
+                                <div>文档制作、资料收集</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>祁忠琪</strong>
+                                </div>
+                                <div>网站搭建、数据收集</div>
+                            </a>
+                        </li>
+                    </ul>
+        </nav>
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a href="global.html"><i class="fa fa-dashboard"></i> 全球机器人产业发展趋势</a>
+                    </li>
+                    <li>
+                        <a class="active-menu" href="china.html"><i class="fa fa-desktop"></i> 我国机器人产业发展趋势</a>
+                    </li>
+					<li>
+                        <a href="region.html"><i class="fa fa-bar-chart-o"></i>我国各区域机器人产业发展水平</a>
+                    </li>
+                    <li>
+                        <a href="AGVinfo.html"><i class="fa fa-qrcode"></i> 我国物流机器人发展概述</a>
+                    </li>
+                    
+                    <li>
+                        <a href="AGVcase.html"><i class="fa fa-table"></i>AGV物流机器人案例分析</a>
+                    </li>
+        </nav>
+        <!-- /. NAV SIDE  -->
+      
+		<div id="page-wrapper">
+          <div class="header"> 
+                        <h1 class="page-header">
+                            我国机器人  <small>2018发展趋势及特征</small>
+                        </h1>       
+        </div>
+            <div id="page-inner">
+
+                <!-- /. ROW  -->
+	
+		<div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="panel panel-primary text-center no-boder blue">
+                            <div class="panel-left pull-left blue">
+                               <i class="fas fa-dollar-sign fa-5x"></i>
+                                
+                            </div>
+                            <div class="panel-right">
+                                <h3>87.4</h3>
+                               <strong> 市场规模(亿美元)</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="panel panel-primary text-center no-boder blue">
+                              <div class="panel-left pull-left blue">
+                                <i class="fas fa-chart-line  fa-5x"></i>
+                                </div>
+                                
+                            <div class="panel-right">
+                            <h3>29.7%</h3>
+                               <strong> 近5年平均增长率</strong>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="panel panel-primary text-center no-boder blue">
+                            <div class="panel-left pull-left blue">
+                                <i class="fas fa-robot  fa-5x"></i>
+                            </div>
+                            <div class="panel-right">
+                             <h3>68 </h3>
+                               <strong> 人均密度(台/万人) </strong>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="panel panel-primary text-center no-boder blue">
+                            <div class="panel-left pull-left blue">
+                                <i class="fas fa-ambulance fa-5x"></i>
+                                
+                            </div>
+                            <div class="panel-right">
+                            <h3>18.4 </h3>
+                             <strong>服务机器人(亿美元)</strong>
+
+                            </div>
+                        </div>
+                    </div><!--/.row-->
+				
+                <div class="row">
+                <div class="col-md-12 col-sm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                           机器人部分领域追赶国际领先水平
+                        </div>
+                        <div class="panel-body">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#home" data-toggle="tab">工业机器人</a>
+                                </li>
+                                <li class=""><a href="#profile" data-toggle="tab">服务机器人</a>
+                                </li>
+                                <li class=""><a href="#messages" data-toggle="tab">特种机器人</a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade active in" id="home">
+                                    <h4>市场规模持续增长，关节型搬运机器人占比较高</h4>
+                                    <p>我国工业机器人市场发展较快，约占全球市场份额三分之一，是全球第一大工业机器人应用市场。 2017 年，我国工业机器人保持高速增长，销量同比增长 30%。按照应用类型分，2017 年国内市场的搬 运上下料机器人占比最高，达 65%，其次为装配机器人，占比 15%，高于焊接机器人占比 6 个百分点。 从产品类型来看，2017 年关节型机器人销量占比超 60%，是国内市场最主要的产品类型;其次是直角坐 标型机器人和 SCARA 机器人，且近年来两者销量占比幅度在逐渐扩大，上升速度高于其他类型机器人 产品。当前，我国生产制造智能化改造升级的需求日益凸显，工业机器人的市场需求依然旺盛，据 IFR 统计， 2017 年我国工业机器人销量达 13.8 万台，预计 2018 年销量将超过 15 万台，市场规模将达到 62.3 亿美元。 到 2020 年，国内市场规模将进一步扩大到 93.5 亿美元。</p>
+                                </div>
+                                <div class="tab-pane fade" id="profile">
+                                    <h4>需求潜力巨大，家用市场引领行业快速发展</h4>
+                                    <p>我国服务机器人的市场规模快速扩大，成为机器人市场应用中颇具亮点的领域。截至 2017 年底，我 国 60 岁及以上老年人口有 2.41 亿人，占总人口 17.3%。随着人口老龄化趋势加快，以及医疗、教育需 求的持续旺盛，我国服务机器人存在巨大市场潜力和发展空间。2018 年我国服务机器人市场规模有望达 到 18.4 亿美元，同比增长约 43.9%，高于全球服务机器人市场增速。其中，我国家用服务机器人、医疗 服务机器人和公共服务机器人市场规模分别为 8.9 亿美元、5.1 亿美元和 4.4 亿美元，家用服务机器人和 公共服务机器人市场增速相对领先。到 2020 年，随着停车机器人、超市机器人等新兴应用场景机器人的 快速发展，我国服务机器人市场规模有望突破 40 亿美元。</p>
+                                </div>
+                                <div class="tab-pane fade" id="messages">
+                                    <h4>应用场景范围扩展，市场进入蓄势待发的重要时期</h4>
+                                    <p>当前，我国特种机器人市场保持较快发展，各种类型产品不断出现，在应对地震、洪涝灾害和极端天气， 以及矿难、火灾、安防等公共安全事件中，对特种机器人有着突出的需求。2018 年，我国特种机器人市 场规模预计将达 6.7 亿美元，增速达到 23.2%，高于全球水平。其中，军事应用机器人、极限作业机器 人和应急救援机器人市场规模预计分别为 4.7 亿美元、1.5 亿美元和 0.5 亿美元，极限作业机器人是增速 最快的领域。随着我国企业对安全生产意识的进一步提升，将逐步使用特种机器人替代人在危险场所和危 害环境中进行作业。到 2020 年，特种机器人的国内市场需求规模有望达到 10.7 亿美元。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                2018 年全球机器人市场结构百分比(%)
+                            </div>
+                            <div class="panel-body">
+                                <div id="morris-donut-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-9 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">                            
+                            <div class="panel-heading">
+                            Area Chart
+                        </div>
+                        <div class="panel-body">
+                            <div id="morris-area-chart"></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+				<div class="row">
+				<div class="col-md-5">
+						<div class="panel panel-default">
+						<div class="panel-heading">
+							2013-2020 年我国机器人年增长率(%)
+						</div>
+						<div class="panel-body">
+							<div id="morris-line-chart"></div>
+						</div>						
+					</div>   
+					</div>		
+					
+						<div class="col-md-7">
+					<div class="panel panel-default">
+					<div class="panel-heading">
+                                2013-2020 年全球机器人年销售额(亿美元)
+                            </div>
+                            <div class="panel-body">
+                                <div id="morris-bar-chart"></div>
+                            </div>
+						
+					</div>  
+					</div>
+					
+				</div> 
+			 
+				
+				<div class="row">
+				<div class="col-md-12">
+				
+					</div>		
+				</div> 	
+                <!-- /. ROW  -->
+
+	   
+				
+				
+				
+                <div class="row">
+                    <div class="col-md-15 col-sm-12 col-xs-12">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Responsive Table Example
+                            </div> 
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>S No.</th>
+                                                <th>First Name</th>
+                                                <th>Last Name</th>
+                                                <th>User Name</th>
+                                                <th>Email ID.</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>John</td>
+                                                <td>Doe</td>
+                                                <td>John15482</td>
+                                                <td>name@site.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Kimsila</td>
+                                                <td>Marriye</td>
+                                                <td>Kim1425</td>
+                                                <td>name@site.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Rossye</td>
+                                                <td>Nermal</td>
+                                                <td>Rossy1245</td>
+                                                <td>name@site.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Richard</td>
+                                                <td>Orieal</td>
+                                                <td>Rich5685</td>
+                                                <td>name@site.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Jacob</td>
+                                                <td>Hielsar</td>
+                                                <td>Jac4587</td>
+                                                <td>name@site.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>Wrapel</td>
+                                                <td>Dere</td>
+                                                <td>Wrap4585</td>
+                                                <td>name@site.com</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- /. ROW  -->
+			
+		
+				<footer><p>Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://www.sucaihuo.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+				
+        
+				</footer>
+            </div>
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+    <!-- JS Scripts-->
+    <!-- jQuery Js -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+	 
+    <!-- Metis Menu Js -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+    <!-- Morris Chart Js -->
+    <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
+    <script src="assets/js/morris/morris.js"></script>
+	
+	
+	<script src="assets/js/easypiechart.js"></script>
+	<script src="assets/js/easypiechart-data.js"></script>
+	
+	 <script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
+	
+    <!-- Custom Js -->
+    <script src="assets/js/chinaCustom-scripts.js"></script>
+
+
+</body>
+
+</html>
