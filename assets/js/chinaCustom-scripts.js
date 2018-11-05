@@ -69,7 +69,7 @@
                 xkey: 'y',
                 ykeys: ['a', 'b','c'],
                 labels: ['工业机器人', '服务机器人','特种机器人'],
-				 barColors: ['#0BA7F2','#F09B22','#009F22'],
+				 barColors: ['#FF9933','#FFCC00','#FFCC66'],
                 hideHover: 'auto',
                 resize: true
             });
@@ -90,7 +90,7 @@
                     label: "特种机器人",
                     value: 8
                 }],
-				   colors: ['#0BA7F2','#F09B22','#009F22'],
+				   colors: ['#FF9933','#FFCC00','#FFCC66'],
                 resize: true
             });
 
@@ -172,7 +172,7 @@
                 hideHover: 'auto',
 				  pointFillColors:['#ffffff'],
 				  pointStrokeColors: ['black'],
-				  lineColors:['#A6A6A6','#F09B22','#87B209','#089684','#AB7F9C','#03D03F0'],
+				  lineColors:['#A6A6A6','#F09B22','#87B209','#089684','#AB7F9C','#FF9933'],
                 resize: true
             });
 
@@ -201,7 +201,7 @@
       resize: true,
       pointFillColors:['#ffffff'],
       pointStrokeColors: ['black'],
-      lineColors:['#0BA7F2','#F09B22','#009F22']
+      lineColors:['#FF9933','#FFCC00','#FFCC66']
 	  
             });
            

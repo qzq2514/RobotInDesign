@@ -79,7 +79,7 @@ Morris.Bar({
                 xkey: 'y',
                 ykeys: ['a', 'b'],
                 labels: ['AVG机器人销量'],
-                 barColors: ['#873DBC'],
+                 barColors: ['#FFCC66'],
                 hideHover: 'auto',
                 resize: true
             });
@@ -110,7 +110,7 @@ Morris.Bar({
                     label: "其他",
                     value: 5
                 }],
-				   colors: ['#0BA7F2','#F09B22','#009F22','#873DBC','#2340EA','#AEFB26','#AEF6F4'],
+				   colors: ['#CC6600','#FF9900','#CCCC00','#FF9966','#FFCC00','#FFCC66','#FFFF33'],
                 resize: true
             });
 
